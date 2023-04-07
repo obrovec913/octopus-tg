@@ -9,8 +9,9 @@
 <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" id="css-main" href="css/dashmix.min.css">
+<link rel="stylesheet" id="css-main01" href="css/dashmix.min.css">
 <link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
+<link rel="stylesheet" id="css-main" href="css\sb-admin-2.min.">
 <link rel="stylesheet" href="assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css">
 </head>
 <body>
@@ -23,8 +24,8 @@
                     <span class="smini-hidden">octopus-tg<span class="opacity-75">.fun</span></span>
                 </a>
                 <div>
-                    <a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');" href="javascript:void(0)">
-                        <i class="fa-regular fa-moon" id="sidebar-style-toggler"></i>
+                    <a class="js-class-toggle text-white-75" id="nod" onclick="changeCSS()">
+                        <i class="fa-regular fa-moon" id="sidebar-style-toggle"></i>
                     </a>
                     <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
                         <i class="fa fa-times-circle"></i>
@@ -64,6 +65,12 @@
                         <a class="nav-main-link" href="domain.html">
                             <i class="nav-main-link-icon fa fa-link"></i>
                             <span class="nav-main-link-name">Мои домены</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="proxy.html">
+                            <i class="nav-main-link-icon fa fa-link"></i>
+                            <span class="nav-main-link-name">Мои прокси</span>
                         </a>
                     </li>
                     <li class="nav-main-item">
@@ -231,6 +238,7 @@
     </div>
     <script src="js/dashmix.core.min.js"></script>
     <script src="js/dashmix.app.min.js"></script>
+    <script src="themes.js"></script>
     <script src="assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
     <script src="js/be_pages_dashboard.min.js"></script>
     <script src="https://kit.fontawesome.com/15ff1bc1a0.js" crossorigin="anonymous"></script>

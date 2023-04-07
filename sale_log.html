@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
 <link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
-<link rel="stylesheet" href="css\dashmix.min.css">
+<link rel="stylesheet" id="css-main01" href="css\dashmix.min.css">
+<link rel="stylesheet" id="css-main" href="css\sb-admin2.min.css">
 </head>
 <body>
 
@@ -23,8 +24,8 @@
                     <span class="smini-hidden">octopus-tg<span class="opacity-75">.fun</span></span>
                 </a>
                 <div>
-                    <a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');" href="javascript:void(0)">
-                        <i class="fa-regular fa-moon" id="sidebar-style-toggler"></i>
+                    <a class="js-class-toggle text-white-75" id="nod" onclick="changeCSS()">
+                        <i class="fa-regular fa-moon" id="sidebar-style-toggle"></i>
                     </a>
                     <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
                         <i class="fa fa-times-circle"></i>
@@ -207,6 +208,7 @@
     </div>
     <script src="js/dashmix.core.min.js"></script>
     <script src="js/dashmix.app.min.js"></script>
+    <script src="themes.js"></script>
     <script src="assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
     <script src="js/be_pages_dashboard.min.js"></script>
     <script src="https://kit.fontawesome.com/15ff1bc1a0.js" crossorigin="anonymous"></script>

@@ -12,7 +12,8 @@
 <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
 <link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<link rel="stylesheet" href="css\dashmix.min.css">
+<link rel="stylesheet" id="css-main01"  href="css\dashmix.min.css">
+<link rel="stylesheet" id="css-main" href="css\sb-admin-2.min.cs">
 </head>
 <body>
 
@@ -24,9 +25,8 @@
                     <span class="smini-hidden">octopus-tg<span class="opacity-75">.fun</span></span>
                 </a>
                 <div>
-                    <a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');" href="javascript:void(0)">
-                        <i class="fa-regular fa-moon" id="sidebar-style-toggler"></i>
-                    
+                    <a class="js-class-toggle text-white-75" id="nod" onclick="changeCSS()">
+                        <i class="fa-regular fa-moon" id="sidebar-style-toggle"></i>
                     </a>
                     <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
                         <i class="fa fa-times-circle"></i>
@@ -180,7 +180,13 @@
                     <form action="accounts.htmlmain" method="POST" enctype="multipart/form-data">
                         <p>Скачивание аккаунтов происходит пачками по 300 шт. Если нужно скачать больше - скачивайте второй раз.</p>
                         <button type="submit" class="btn btn-hero-primary  mb-3" name="download_all">Скачать все</button>
-                         <button type="submit" class="btn btn-hero-primary mb-3" name="download_sale">Скачать проданное</button>
+                        <button type="submit" class="btn btn-hero-primary mb-3" name="download_sale">Скачать проданное</button>
+                        <button type="submit" class="btn btn-hero-primary mb-3" id="buut" >Скачать  в форматах</button>
+                        <div id="dubuut">
+                            <button type="submit" class="btn btn-hero-primary mb-3" id="buut" name="download_sale">Скачать  в txt</button>
+                            <button type="submit" class="btn btn-hero-primary mb-3" id="buut" name="download_sale">Скачать  в json</button>
+
+                        </div>
                         <button type="submit" class="btn btn-hero-primary mb-3" name="download_nosale">Скачать "Не требуется"</button>
                         <button type="submit" class="btn btn-hero-primary mb-3" name="download_resale">Скачать "Перепродажа/на маркете"</button>
                         <button type="submit" class="btn btn-hero-primary mb-3" name="download_nodetect">Скачать "Не определено"</button>
@@ -211,7 +217,7 @@
             </div>
         </div>
     </main>
-    <footer id="page-footer" class="bg-body-light">
+    <!--<footer id="page-footer" class="bg-body-light">
         <div class="content py-0">
             <div class="row font-size-sm">
                 <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-right">
@@ -223,10 +229,12 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer -->
     </div>
 <script src="js/dashmix.core.min.js"></script>
 <script src="js/dashmix.app.min.js"></script>
+<script src="themes.js"></script>
+<script src="element.js"></script>
 <script src="js/be_pages_dashboard.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/15ff1bc1a0.js" crossorigin="anonymous"></script>

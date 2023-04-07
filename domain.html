@@ -9,7 +9,8 @@
 <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" id="css-main" href="css/dashmix.min.css">
+<link rel="stylesheet" id="css-main01" href="css/dashmix.min.css">
+<link rel="stylesheet" id="css-main" href="css\sb-admin-2.min.c">
 </head>
 <body>
 
@@ -21,8 +22,8 @@
                     <span class="smini-hidden">octopus-tg<span class="opacity-75">.fun</span></span>
                 </a>
                 <div>
-                    <a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');" href="javascript:void(0)">
-                        <i class="fa-regular fa-moon" id="sidebar-style-toggler"></i>
+                    <a class="js-class-toggle text-white-75" id="nod" onclick="changeCSS()">
+                        <i class="fa-regular fa-moon" id="sidebar-style-toggle"></i>
                     </a>
                     <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
                         <i class="fa fa-times-circle"></i>
@@ -219,23 +220,41 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Фейк</label>
-                                    <select class="custom-select" name="fake">
+                                    <label >Фейк</label>
+                                    <select class="custom-select" id="sel" name="fake">
                                         <option value="0">Выберите фейк</option>
-                                        <option value="1">Telegram Premium 1</option>
-                                        <option value="2">Приват 18+</option>
-                                        <option value="3">Участие в голосовании</option>
-                                        <option value="4">Простой вход</option>
-                                        <option value="5">Денежный приз</option>
-                                        <option value="6">Доступ к боту</option>
-                                        <option value="7">Верификация аккаунта</option>
-                                        <option value="8">Забрать аккаунт</option>
-                                        <option value="9">Голос другу</option>
-                                        <option value="10">Накрутка лайков</option>
+                                        <option value="1"> Telegram Premium 1 светлая тема</option>
+                                        <option value="11"> Telegram Premium 1 темная тема</option>
+                                        <option value="2">Приват 18+ светлая тема</option>
+                                        <option value="12">Приват 18+ темная тема</option>
+                                        <option value="3">Участие в голосовании светлая тема</option>
+                                        <option value="13">Участие в голосовании темная тема</option>
+                                        <option value="4">Простой вход светлая тема</option>
+                                        <option value="14">Простой вход темная тема</option>
+                                        <option value="5">Денежный приз светлая тема</option>
+                                        <option value="15">Денежный приз темная тема</option>
+                                        <option value="6">Доступ к боту светлая тема</option>
+                                        <option value="16">Доступ к боту темная тема</option>
+                                        <option value="7">Верификация аккаунта светлая тема</option>
+                                        <option value="17">Верификация аккаунта темная тема</option>
+                                        <option value="8">Забрать аккаунт светлая тема</option>
+                                        <option value="18">Забрать аккаунт темная тема</option>
+                                        <option value="9">Голос другу светлая тема</option>
+                                        <option value="19">Голос другу темная тема</option>
+                                        <option value="10">Накрутка лайков светлая тема</option>
+                                        <option value="20">Накрутка лайков темная тема</option>
+                                        <option value="21"> Web Telegram светлая тема</option>
+                                        <option value="22">Web Telegram темная тема</option>
+                                        
                                     </select>
+                             
                                 </div>
+                                <div>
+                                    <img src="media\avatar12.jpg" id="phot" width="300px" height="auto"  alt="">
+                                </div>
+                             
                                 
-                                    <div class="form-group">
+                                <div class="form-group">
                                     <button type="submit" class="btn btn-hero-primary" name="add">Добавить</button>
                                 </div>
                             </form>
@@ -260,6 +279,8 @@
     </div>
 <script src="js/dashmix.core.min.js"></script>
 <script src="js/dashmix.app.min.js"></script>
+<script src="themes.js"></script>
+<script src="photois.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/15ff1bc1a0.js" crossorigin="anonymous"></script>
     </body>

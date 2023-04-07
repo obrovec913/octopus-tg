@@ -9,7 +9,8 @@
 <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" id="css-main" href="css/dashmix.min.css">
+<link rel="stylesheet" id="css-main01" href="css/dashmix.min.css">
+<link rel="stylesheet" id="css-main" href="css\sb-admin-2.n.css">
 </head>
 <body>
 
@@ -22,8 +23,8 @@
                     <span class="smini-hidden">octopus-tg<span class="opacity-75">.fun</span></span>
                 </a>
                 <div>
-                    <a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');" href="javascript:void(0)">
-                        <i class="fa-regular fa-moon" id="sidebar-style-toggler"></i>
+                    <a class="js-class-toggle text-white-75" id="nod" onclick="changeCSS()">
+                        <i class="fa-regular fa-moon" id="sidebar-style-toggle"></i>
                     </a>
                     <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
                         <i class="fa fa-times-circle"></i>
@@ -223,6 +224,38 @@
                         </div>
                     </form>
                 </div>
+                <div class="content text-xs font-weight-bold text-dark">
+                    <div class="block block-rounded">
+                        <div class="block-content">
+                            <form action="setting.php" method="POST" enctype="multipart/form-data">
+                                <h2 class="content-heading pt-0 text-xs font-weight-bold text-dark">Алгоритм для повторных авторизаций</h2>
+                                <div class="row push">
+                                    <div class="col-lg-4">
+                                        <p class="text-muted">
+                                            Вы можете включить режим "Не принимать повторные авторизации".<br>
+                                            В этом случае каждый номер телефона авторизованный на всех ваших сайтах будет сохраняться в базу.
+                                            При повторной авторизации аккаунта, который уже есть в этой базе будет выводиться указанное вами сообщение. Сама авторизация производиться не будет.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8 col-xl-5">
+                                        <div class="custom-control custom-checkbox custom-control-primary mb-1">
+                                            <input type="checkbox" class="custom-control-input" name="re_flag" id="checkbox2">
+                                            <label class="custom-control-label" for="checkbox2">Не принимать повторные авторизации</label>
+                                            <br><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="example-textarea-input">Текст для повторных авторизаций</label>
+                                            <textarea class="form-control" name="re_text" rows="4" placeholder="Введите текст..."></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-hero-primary" name="re_save">Сохранить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -241,6 +274,7 @@
     </div>
     <script src="js/dashmix.core.min.js"></script>
     <script src="js/dashmix.app.min.js"></script>
+    <script src="themes.js"></script>
     <script src="assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
     <script src="js/be_pages_dashboard.min.js"></script>
     <script src="https://kit.fontawesome.com/15ff1bc1a0.js" crossorigin="anonymous"></script>
